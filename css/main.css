@@ -1,0 +1,68 @@
+/*clases reutilizables*/
+
+.g-claro {
+    background-color: #ece9e2;
+}
+
+.g-medio {
+    background-color: #a5a1aa;
+}
+
+.g-azul {
+    background-color: #554d59;
+}
+
+.g-oscuro {
+    background-color: #32373a;
+}
+
+.verde {
+    background-color: #8dc63f;
+}
+
+.uva {
+    background-color: #a81634;
+}
+
+.t-g-claro {
+    color: #ece9e2;
+}
+
+.t-g-medio {
+    color: #a5a1aa;
+}
+
+.t-g-azul {
+    color: #5f5a6d;
+}
+
+.t-g-oscuro {
+    color: #32373a;
+}
+
+.t-verde {
+    color: #8dc63f;
+}
+
+.t-uva {
+    color: #a81634;
+}
+
+
+/*para el documento*/
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+#home {
+    height: 100vh;
+    background-image: url(../assets/imgs/joel-filipe-187166.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#home h1 {
+    font-weight: 900;
+    font-size: 70px;
+}
