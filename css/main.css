@@ -66,3 +66,9 @@ html {
     font-weight: 900;
     font-size: 70px;
 }
+
+.uk-tab>.uk-active>a {
+    font-weight: 500;
+    color: #333;
+    border-color: #8dc63f;
+}
