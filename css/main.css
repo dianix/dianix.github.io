@@ -21,7 +21,7 @@
 }
 
 .uva {
-    background-color: #a81634;
+    background-color: #a9164a;
 }
 
 .t-g-claro {
@@ -45,7 +45,11 @@
 }
 
 .t-uva {
-    color: #a81634;
+    color: #a9164a;
+}
+
+.bold {
+    font-weight: 900;
 }
 
 
@@ -55,6 +59,22 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
+header, header #cabezal {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.uk-tab>.uk-active>a {
+    font-weight: 500;
+    color: #333;
+    border-color: #8dc63f;
+}
+
+header a.menu:hover {
+    color: #a81634;
+}
+
 #home {
     height: 100vh;
     background-image: url(../assets/imgs/joel-filipe-187166.jpg);
@@ -62,13 +82,6 @@ html {
     background-position: center;
 }
 
-#home h1 {
-    font-weight: 900;
-    font-size: 70px;
-}
-
-.uk-tab>.uk-active>a {
-    font-weight: 500;
-    color: #333;
-    border-color: #8dc63f;
+#contacto a:hover {
+    color: #8dc63f;
 }
