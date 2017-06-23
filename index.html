@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Diana Vazquez - Front End/Diseño</title>
+    <title>Diana Vázquez</title>
     <link rel="shorcut icon" type="image/x-icon" href="assets/imgs/grulla.png" />
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Julius+Sans+One" rel="stylesheet" />
 </head>
 
 <body class="uk-background-muted">
     <header class="uk-position-top">
-        <nav id="cabezal" class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <nav id="cabezal" class="uk-navbar-container uk-navbar-transparent" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500" uk-navbar>
             <a class="uk-navbar-item uk-logo t-verde" href="#top"><img src="assets/imgs/grulla.svg" alt="icono-grulla"></a>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
@@ -36,120 +36,207 @@
         </nav>
     </header>
 
-    <main id="home" class="uk-grid uk-grid-small uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-fade hidden:true; delay: 500">
+    <main id="home" class="uk-grid uk-grid-small uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-padding-small" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500">
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
-            <h1 class="uk-margin-medium-top uk-heading-primary t-uva bold">Diana Vázquez</h1>
-            <h2 class="uk-margin-remove t-g-azul">Front End y Diseño</h2>
+            <h1 class="uk-margin-medium-top uk-heading-primary t-uva asap-b">Diana Vázquez</h1>
+            <h2 class="uk-margin-remove t-g-azul julius">Front End <span class="t-uva asap-r">&</span> Diseño</h2>
         </div>
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
 
             <div class="uk-text-center">
                 <div class="uk-inline-clip uk-transition-toggle">
                     <a id="diana" href=""><img src="assets/imgs/yop.jpg" class="uk-border-circle" alt="Diana V."></a>
-                    <div class="uk-transition-fade uk-position-cover uk-position-xlarge uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-border-circle bold">
-                        <p>Diseñadora gráfica & Front End developer con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc. <br> Experiencia en áreas de museografía, diseño editorial, fotografía y edición de imágenes. <br> Gusto por la ingeniería en papel, caligrafía y lettering.</p>
+                    <div class="uk-transition-fade uk-position-cover uk-position-xlarge uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-border-circle">
+                        <p> <span class="t-uva uk-text-lead">D</span>iseñadora gráfica & Front End developer con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc. <br> Experiencia en áreas de museografía, diseño editorial, fotografía y edición de imágenes. <br> Gusto por la ingeniería en papel, caligrafía y lettering.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <section id="conocimientos">
-        <h2 class="bold t-verde">Servicios</h2>
-        <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-4@m uk-grid-small">
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="assets/imgs/brandi-redd-122054.jpg" alt="Muestra">
+    <section id="conocimientos" class="g-azul" uk-scrollspy="target: > div; cls:uk-animation-slide-left-medium; delay: 600">
+        <h2 class="bold t-verde uk-text-center asap-b">Conocimientos</h2>
+        <div id="herramientas" class="uk-grid uk-child-width-1-1@s uk-grid-small">
+            <h4 class="t-verde julius uk-text-center@s uk-text-left@m">Herramientas de desarrollo web</h4>
+            <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/html5.svg" alt="HTML5">
+                        <p class="t-g-claro">HTML 5</p>
                     </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Top</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/css3.svg" alt="CSS 3">
+                        <p class="t-g-claro">CSS 3</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/js.svg" alt="JavaScript">
+                        <p class="t-g-claro">JavaScript</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/jq.svg" alt="jQuery">
+                        <p class="t-g-claro">jQuery</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="assets/imgs/brandi-redd-122054.jpg" alt="Muestra">
+            
+            <h5 class="t-verde julius uk-heading-line">Frameworks CSS</h5>
+            <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/bt.svg" alt="Bootstrap">
+                        <p class="t-g-claro">Bootstrap</p>
                     </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Top</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                </div>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/mtz.svg" alt="Materialize">
+                        <p class="t-g-claro">Materialize</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/uik.svg" alt="UIkit">
+                        <p class="t-g-claro">UIkit</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="assets/imgs/brandi-redd-122054.jpg" alt="Muestra">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Top</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <img src="assets/imgs/brandi-redd-122054.jpg" alt="Muestra">
-                    </div>
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Media Top</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr class="uk-divider-icon">
 
-    <section id="proyectos">
-        <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
-            <div>
-                <div class="uk-tile claro">
-                    <p class="uk-h4">Proyecto 1</p>
+            <h4 class="t-verde julius">Herramientas de diseño</h4>
+            <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/ai.svg" alt="Illustrator">
+                        <p class="t-g-claro">Illustator</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-tile g-azul">
-                    <p class="uk-h4">Proyecto 2</p>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/ps.svg" alt="Photoshop">
+                        <p class="t-g-claro">Photoshop</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-tile claro">
-                    <p class="uk-h4">Proyecto 3</p>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/id.svg" alt="InDesign">
+                        <p class="t-g-claro">In Design</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-tile uva">
-                    <p class="uk-h4">Proyecto 4</p>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/au.svg" alt="Audition">
+                        <p class="t-g-claro">Audition</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-tile uk-tile-default">
-                    <p class="uk-h4">Proyecto 5</p>
+                <div>
+                    <div class="uk-tile uk-padding-small">
+                        <img src="assets/imgs/tools/ae.svg" alt="AfterEffects">
+                        <p class="t-g-claro">After Effects</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="uk-tile verde">
-                    <p class="uk-h4">Proyecto 6</p>
-                </div>
+
             </div>
         </div>
     </section>
-    <footer id="contacto" class="uk-grid g-oscuro t-g-claro uk-child-width-1-2 uk-padding uk-grid-divider uk-text-center">
-        <div>
-            <h3 class="t-g-claro">Contacto</h3>
-            <p>Diana B. Vázquez Camacho</p>
-            <p><b>Teléfono:</b> <a href="tel://5561919111" class="t-g-claro">55 6191 9111</a></p>
-            <p><b>e-mail:</b> <a href="mailto:anaid.xd@gmail.com" class="t-g-claro">anaid.xd@gmail.com</a></p>
+
+    <section id="proyectos" class="uva">
+        <h2 class="bold t-g-claro uk-text-center asap-b">Proyectos</h2>
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5;">
+            <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/lyft.png" alt="lyft">
+                        <div class="uk-position-center">
+                            <a href="" class="t-verde uk-text-large bold uk-transition-fade">Lyft</a>
+                        </div>
+                    </div>
+                </div>
+               <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/applove.png" alt="applove">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Applove</a>
+                        </div>
+                    </div>
+                </div>
+                <<div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/freelancer.png" alt="freelancer">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Freelancer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/labcar.png" alt="labcar">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">LabCar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/antojitos.mx.png" alt="antojitosmx">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Antojitos.mx</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/foro.png" alt="foro">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Foro TashidotuKoto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/twitter.png" alt="twitter">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/pokedex.png" alt="pokedex">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Pokedex</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center">
+                    <div class="uk-inline-clip uk-transition-toggle">
+                        <img src="assets/imgs/proyectos/lyft.png" alt="lyft">
+                        <div class="uk-position-center">
+                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Lyft</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>            
         </div>
-        <div>
-            <h3 class="t-g-claro">Redes Sociales</h3>
-            <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium-right"><span uk-icon="icon: github; ratio: 2"></span></a>
-            <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro"><span uk-icon="icon: linkedin; ratio: 2"></a>
+    </section>
+    <footer id="contacto" class="uk-container-expand g-oscuro t-g-claro uk-padding  uk-text-center">
+        <h2 class="bold t-g-claro uk-text-center asap-b">Contacto</h2>
+        <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center">
+            <div class="uk-text-small">
+                <p>Diana B. Vázquez Camacho</p>
+                <p><b>Teléfono:</b> <a href="tel://5561919111" class="t-g-claro">55 6191 9111</a></p>
+                <p><b>e-mail:</b> <a href="mailto:anaid.xd@gmail.com" class="t-g-claro">anaid.xd@gmail.com</a></p>
+            </div>
+            <div class="uk-text-small">
+                <h5 class="t-g-claro">Redes Sociales</h5>
+                <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium-right"><span uk-icon="icon: github; ratio: 2"></span></a>
+                <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro"><span uk-icon="icon: linkedin; ratio: 2"></a>
+            </div>
         </div>
     </footer>
 

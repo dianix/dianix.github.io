@@ -20,6 +20,10 @@
     background-color: #8dc63f;
 }
 
+.barraverde {
+    background-color: #8dc63f;
+}
+
 .uva {
     background-color: #a9164a;
 }
@@ -49,17 +53,33 @@
 }
 
 .bold {
-    font-weight: 900;
+    font-weight: 700;
+}
+
+.julius {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 700;
+}
+
+.asap-r {
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+}
+
+.asap-b {
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
 }
 
 
 /*para el documento*/
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
-header, header #cabezal {
+header,
+header #cabezal {
     width: 100%;
     position: fixed;
     z-index: 1;
@@ -77,9 +97,29 @@ header a.menu:hover {
 
 #home {
     height: 100vh;
-    background-image: url(../assets/imgs/joel-filipe-187166.jpg);
+    background-image: url(../assets/imgs/inicio-fondo.jpg);
     background-size: cover;
     background-position: center;
+}
+
+#conocimientos,
+#proyectos,
+#contacto {
+    padding-top: 15vh;
+    padding-bottom: 6vh;
+}
+
+#herramientas {
+    padding: 0 7vh;
+}
+
+#proyectos img {
+    width: 100%;
+}
+
+#proyectos a:hover {
+    text-decoration: none;
+    color: #a9164a;
 }
 
 #contacto a:hover {
