@@ -102,6 +102,10 @@ header a.menu:hover {
     background-position: center;
 }
 
+#yop:hover {
+    cursor: pointer;
+}
+
 #conocimientos,
 #proyectos,
 #contacto {
@@ -119,7 +123,7 @@ header a.menu:hover {
 
 #proyectos a:hover {
     text-decoration: none;
-    color: #a9164a;
+    color: #8dc63f;
 }
 
 #contacto a:hover {

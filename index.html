@@ -16,7 +16,7 @@
 <body class="uk-background-muted">
     <header class="uk-position-top">
         <nav id="cabezal" class="uk-navbar-container uk-navbar-transparent" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500" uk-navbar>
-            <a class="uk-navbar-item uk-logo t-verde" href="#top"><img src="assets/imgs/grulla.svg" alt="icono-grulla"></a>
+            <a class="uk-navbar-item uk-logo t-verde" href="#home"><img src="assets/imgs/grulla.svg" alt="icono-grulla"></a>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
@@ -44,7 +44,7 @@
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
 
             <div class="uk-text-center">
-                <div class="uk-inline-clip uk-transition-toggle">
+                <div id="yop" class="uk-inline-clip uk-transition-toggle">
                     <a id="diana" href=""><img src="assets/imgs/yop.jpg" class="uk-border-circle" alt="Diana V."></a>
                     <div class="uk-transition-fade uk-position-cover uk-position-xlarge uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-border-circle">
                         <p> <span class="t-uva uk-text-lead">D</span>iseñadora gráfica & Front End developer con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc. <br> Experiencia en áreas de museografía, diseño editorial, fotografía y edición de imágenes. <br> Gusto por la ingeniería en papel, caligrafía y lettering.</p>
@@ -55,7 +55,9 @@
     </main>
 
     <section id="conocimientos" class="g-azul" uk-scrollspy="target: > div; cls:uk-animation-slide-left-medium; delay: 600">
-        <h2 class="bold t-verde uk-text-center asap-b">Conocimientos</h2>
+        <div class="uk-heading-line uk-text-left uk-container">
+            <h2 class="bold t-g-claro uk-text-center asap-b">Conocimientos</h2>
+        </div>
         <div id="herramientas" class="uk-grid uk-child-width-1-1@s uk-grid-small">
             <h4 class="t-verde julius uk-text-center@s uk-text-left@m">Herramientas de desarrollo web</h4>
             <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
@@ -84,7 +86,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <h5 class="t-verde julius uk-heading-line">Frameworks CSS</h5>
             <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
                 <div>
@@ -145,98 +147,100 @@
     </section>
 
     <section id="proyectos" class="uva">
-        <h2 class="bold t-g-claro uk-text-center asap-b">Proyectos</h2>
-        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.5;">
+        <div class="uk-heading-line uk-text-left uk-container">
+            <h2 class="t-g-claro asap-b">Proyectos</h2>
+        </div>
+        <div>
             <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/lyft.png" alt="lyft">
-                        <div class="uk-position-center">
-                            <a href="" class="t-verde uk-text-large bold uk-transition-fade">Lyft</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a target="_blank" href="https://dianix.github.io/lyft/index.html" class="t-verde uk-text-large bold uk-margin-remove">Lyft</a>
+                            <p class=" uk-margin-remove">Maquetación de landing page con flexbox.</p>
                         </div>
                     </div>
                 </div>
-               <div class="uk-text-center">
+                <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/applove.png" alt="applove">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Applove</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Applove</a>
+                            <p class=" uk-margin-remove">Maquetación de landing page con uso de grid.</p>
                         </div>
                     </div>
                 </div>
-                <<div class="uk-text-center">
+                <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/freelancer.png" alt="freelancer">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Freelancer</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Freelancer</a>
+                            <p class=" uk-margin-remove">Maquetación con uso de Bootstrap.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/labcar.png" alt="labcar">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">LabCar</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Labcar</a>
+                            <p class=" uk-margin-remove">Uso de framework bootstrap para maquetación y modales.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/antojitos.mx.png" alt="antojitosmx">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Antojitos.mx</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Antojitos.mx</a>
+                            <p class=" uk-margin-remove">Uso de framework Materialize y API de google maps.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/foro.png" alt="foro">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Foro TashidotuKoto</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Foro dinámico</a>
+                            <p class=" uk-margin-remove">Maquetación con bootstrap y uso de AJAX para llamar API.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/twitter.png" alt="twitter">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Twitter</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Twitter</a>
+                            <p class=" uk-margin-remove">Maquetación con materialize y código en JS para contar caracteres, publicar y borrar mensajes.</p>
                         </div>
                     </div>
                 </div>
                 <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/pokedex.png" alt="pokedex">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Pokedex</a>
+                        <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary uk-text-center uk-text-middle">
+                            <a href="" class="t-verde uk-text-large bold uk-margin-remove">Pokedex</a>
+                            <p class=" uk-margin-remove">Maquetación con materialize y uso de AJAX para llamar datos de API.</p>
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
-                    <div class="uk-inline-clip uk-transition-toggle">
-                        <img src="assets/imgs/proyectos/lyft.png" alt="lyft">
-                        <div class="uk-position-center">
-                            <a href="" class="t-g-azul uk-text-large bold uk-transition-fade">Lyft</a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>            
+
+            </div>
         </div>
     </section>
-    <footer id="contacto" class="uk-container-expand g-oscuro t-g-claro uk-padding  uk-text-center">
-        <h2 class="bold t-g-claro uk-text-center asap-b">Contacto</h2>
-        <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m uk-text-center">
+    <footer id="contacto" class="uk-container-expand g-oscuro t-g-claro uk-padding">
+        <div class="uk-heading-line uk-text-center uk-container">
+            <h2 class="t-g-claro asap-b">Comunícate</h2>
+        </div>
+        <div class="uk-grid uk-child-width-1-1@s uk-child-width-1-2@m">
             <div class="uk-text-small">
-                <p>Diana B. Vázquez Camacho</p>
-                <p><b>Teléfono:</b> <a href="tel://5561919111" class="t-g-claro">55 6191 9111</a></p>
-                <p><b>e-mail:</b> <a href="mailto:anaid.xd@gmail.com" class="t-g-claro">anaid.xd@gmail.com</a></p>
+                <p class="uk-text-lead t-g-claro">D.C.G. Diana B. Vázquez Camacho</p>
+                <a href="tel://5561919111" class="t-g-claro" uk-icon="icon: phone; ratio: 2"></a>
+                <a href="mailto:anaid.xd@gmail.com" class="t-g-claro" uk-icon="icon: mail; ratio: 2"></a>
+                <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium-right" uk-icon="icon: github; ratio: 2"></a>
+                <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro" uk-icon="icon: linkedin; ratio: 2"></a>
             </div>
-            <div class="uk-text-small">
-                <h5 class="t-g-claro">Redes Sociales</h5>
-                <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium-right"><span uk-icon="icon: github; ratio: 2"></span></a>
-                <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro"><span uk-icon="icon: linkedin; ratio: 2"></a>
-            </div>
+            
         </div>
     </footer>
 

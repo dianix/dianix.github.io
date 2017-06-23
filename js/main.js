@@ -6,11 +6,9 @@ function cabezalCambio() {
     var cabezal = $("#cabezal");
     //console.log(cabezal)
     if (window.scrollY > 100) {
-        cabezal.removeClass("uk-navbar-transparent");
-        cabezal.addClass("barraverde");
+        cabezal.removeClass("uk-navbar-transparent");        
        
     } else if (window.scrollY < 100) {
-        cabezal.removeClass("barraverde");
         cabezal.addClass("uk-navbar-transparent");
     }
 }
