@@ -126,6 +126,11 @@ header a.menu:hover {
     color: #8dc63f;
 }
 
+#contacto a {
+	 margin: 0 2rem;
+    padding: 0;
+}
+
 #contacto a:hover {
     color: #8dc63f;
 }

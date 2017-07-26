@@ -5,10 +5,10 @@ var cargarPagina = function(){
 function cabezalCambio() {
     var cabezal = $("#cabezal");
     //console.log(cabezal)
-    if (window.scrollY > 100) {
+    if (window.scrollY > 80) {
         cabezal.removeClass("uk-navbar-transparent");        
        
-    } else if (window.scrollY < 100) {
+    } else if (window.scrollY < 80) {
         cabezal.addClass("uk-navbar-transparent");
     }
 }
