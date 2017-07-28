@@ -106,6 +106,10 @@ header a.menu:hover {
     background-position: center;
 }
 
+h2.uk-margin-remove.t-g-azul.julius {
+    letter-spacing: .25vw;
+}
+
 #yop:hover {
     cursor: pointer;
 }
