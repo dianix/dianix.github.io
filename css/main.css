@@ -110,6 +110,10 @@ h2.uk-margin-remove.t-g-azul.julius {
     letter-spacing: .25vw;
 }
 
+#yop {
+    -webkit-animation-iteration-count: 2;
+}
+
 #yop:hover {
     cursor: pointer;
 }
@@ -138,7 +142,6 @@ h2.uk-margin-remove.t-g-azul.julius {
     padding-top: 1rem;
 }
 
-
 #contacto a:hover {
     color: #8dc63f;
 }
@@ -148,4 +151,3 @@ h2.uk-margin-remove.t-g-azul.julius {
         width: 50%;
     }
 }
-
