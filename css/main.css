@@ -89,6 +89,10 @@ header #cabezal {
     z-index: 1;
 }
 
+.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
+    color: #a9164a;
+}
+
 .uk-tab>.uk-active>a {
     font-weight: 500;
     color: #333;
@@ -147,6 +151,16 @@ h2.uk-margin-remove.t-g-azul.julius {
 }
 
 @media (min-width:0px) and (max-width:639px) {
+    
+    #home {
+        padding-top: 3rem;
+    }
+    #nombre {
+        font-size: 2.5rem
+    }
+    #profesion {
+        font-size: 1.5rem
+    }
     div.icono-xs {
         width: 50%;
     }
