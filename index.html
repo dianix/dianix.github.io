@@ -9,6 +9,7 @@
     <link rel="shorcut icon" type="image/x-icon" href="assets/imgs/grulla.png" />
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" />
     <link href="https://fonts.googleapis.com/css?family=Asap:400,700|Julius+Sans+One" rel="stylesheet" />
 </head>
@@ -16,11 +17,11 @@
 <body class="uk-background-muted">
     <header class="uk-position-top">
         <nav id="cabezal" class="uk-navbar-container uk-navbar-transparent" uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 500" uk-navbar>
-            <a class="uk-navbar-item uk-logo t-verde" href="#home"><img src="assets/imgs/grulla.svg" alt="icono-grulla"></a>
+            <a class="uk-navbar-item uk-logo t-verde" href="#home" uk-scroll><img src="assets/imgs/grulla.svg" alt="icono-grulla"></a>
             <div class="uk-navbar-left">
                 <ul class="uk-navbar-nav">
                     <li class="uk-active">
-                        <a href="#home" uk-icon="icon: home"> <span class="uk-visible@m">Home</span> &nbsp;</a>
+                        <a href="#home" uk-icon="icon: home" uk-scroll> <span class="uk-visible@m">Home</span> &nbsp;</a>
                     </li>
                     <li>
                         <a href="#conocimientos" uk-icon="icon: cog" uk-scroll> <span class="uk-visible@m">Conocimientos</span>&nbsp;</a>
@@ -40,7 +41,7 @@
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
             <h1 class="uk-margin-medium-top uk-heading-primary t-uva asap-b">Diana Vázquez</h1>
             <h2 class="uk-margin-remove t-g-azul julius">Front End <span class="t-uva asap-r">&</span> Diseño</h2>
-            <a target="_blank" class="uk-button uk-button-danger uk-margin-large-top" href="./assets/docs/CVDianaVazquez2017.pdf">Ver Curriculum</a>
+            <a target="_blank" class="uk-button uk-button-danger uk-margin-medium-top uk-margin-medium-bottom" href="./assets/docs/CVDianaVazquez2017.pdf">Ver Curriculum</a>
         </div>
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
 
@@ -48,7 +49,7 @@
                 <div id="yop" class="uk-inline-clip uk-transition-toggle">
                     <a id="diana" href=""><img src="assets/imgs/yop.jpg" class="uk-border-circle" alt="Diana V."></a>
                     <div class="uk-transition-fade uk-position-cover uk-position-xlarge uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-border-circle">
-                        <p> <span class="t-uva uk-text-lead">D</span>iseñadora gráfica & Front End developer con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc. <br> Experiencia en áreas de museografía, diseño editorial, fotografía y edición de imágenes. <br> Gusto por la ingeniería en papel, caligrafía y lettering.</p>
+                        <p> <span class="t-uva uk-text-lead">D</span>iseñadora gráfica & Front End developer con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc. <br> Experiencia en áreas de museografía, diseño editorial y edición de imágenes. <br> Gusto por la ingeniería en papel, caligrafía y lettering.</p>
                     </div>
                 </div>
             </div>
@@ -59,83 +60,74 @@
         <div class="uk-heading-line uk-text-left uk-container">
             <h2 class="bold t-g-claro uk-text-center asap-b">Conocimientos</h2>
         </div>
-        <div id="herramientas" class="uk-grid uk-child-width-1-1@s uk-grid-small">
+        <div id="herramientas" class="uk-grid uk-child-width-1-1@s uk-grid-collapse">
             <h4 class="t-verde julius uk-text-center@s uk-text-left@m">Herramientas de desarrollo web</h4>
-            <div class="web uk-child-width-1-6@m uk-text-center" uk-grid>
-                <div>
+            <div class="web uk-child-width-1-3@s uk-child-width-1-6@m uk-text-center" uk-grid>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/html5.svg" alt="HTML5">
-                        </a>
-                        <p class="t-g-claro">HTML 5</p>
+                        <img src="assets/imgs/tools/html5.svg" alt="HTML5">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">HTML 5</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/css3.svg" alt="CSS 3">
-                        </a>
-                        <p class="t-g-claro">CSS 3</p>
+                        <img src="assets/imgs/tools/css3.svg" alt="CSS 3">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">CSS 3</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/js.svg" alt="JavaScript">
-                        </a>
-                        <p class="t-g-claro">JavaScript</p>
+                        <img src="assets/imgs/tools/js.svg" alt="JavaScript">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">JavaScript</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/jq.svg" alt="jQuery">
-                        </a>
-                        <p class="t-g-claro">jQuery</p>
+                        <img src="assets/imgs/tools/jq.svg" alt="jQuery">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">jQuery</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Básico" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/sss.svg" alt="Sass">
-                        </a>
-                        <p class="t-g-claro">Sass</p>
+                        <img src="assets/imgs/tools/sss.svg" alt="Sass">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">Sass</p>
+                        <h6 class="t-g-medio uk-margin-remove">Básico</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Básico" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/rct.svg" alt="React">
-                        </a>
-                        <p class="t-g-claro">React</p>
+                        <img src="assets/imgs/tools/rct.svg" alt="React">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">React</p>
+                        <h6 class="t-g-medio uk-margin-remove">Básico</h6>
                     </div>
                 </div>
             </div>
 
             <h5 class="t-verde julius uk-heading-line">Frameworks CSS</h5>
             <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/bt.svg" alt="Bootstrap">
-                        </a>
-                        <p class="t-g-claro">Bootstrap</p>
+                        <img src="assets/imgs/tools/bt.svg" alt="Bootstrap">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">Bootstrap</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/mtz.svg" alt="Materialize">
-                        </a>
-                        <p class="t-g-claro">Materialize</p>
+                        <img src="assets/imgs/tools/mtz.svg" alt="Materialize">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">Materialize</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
-                <div>
+                <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
-                        <a class="uk-margin-small" title="Intermedio" uk-tooltip="pos:bottom">
-                            <img src="assets/imgs/tools/uik.svg" alt="UIkit">
-                        </a>
-                        <p class="t-g-claro">UIkit</p>
+                        <img src="assets/imgs/tools/uik.svg" alt="UIkit">
+                        <p class="t-g-claro uk-margin-small uk-margin-remove-bottom">UIkit</p>
+                        <h6 class="t-g-medio uk-margin-remove">Intermedio</h6>
                     </div>
                 </div>
             </div>
@@ -259,7 +251,7 @@
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/antojitos.mx.png" alt="antojitosmx">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
-                            <h2><b>Antojitos.mx</b></h2>                            
+                            <h2><b>Antojitos.mx</b></h2>
                             <p class=" uk-margin-remove">Uso de API google maps y estilos con Materialize.</p>
                             <div>
                                 <a target="_blank" href="https://dianix.github.io/antojitos.mx/" class="t-verde m-lateral" uk-icon="icon: desktop; ratio:2"></a>
@@ -267,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
                 <!-- <div class="uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/foro.png" alt="foro">
@@ -281,7 +273,7 @@
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/pokedex.png" alt="pokedex">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
-                            <h2><b>Pokedex</b></h2>                            
+                            <h2><b>Pokedex</b></h2>
                             <p class=" uk-margin-remove">AJAX para consumo de API y estilos con materialize.</p>
                             <div>
                                 <a target="_blank" href="https://dianix.github.io/pokedex/public/" class="t-verde m-lateral" uk-icon="icon: desktop; ratio:2"></a>
@@ -289,7 +281,7 @@
                             </div>
                         </div>
                     </div>
-                </div>              
+                </div>
 
             </div>
         </div>
@@ -299,17 +291,19 @@
             <h2 class="t-g-claro asap-b">Contáctame</h2>
         </div>
         <div class="uk-grid uk-child-width-1-1@s uk-text-center">
-            <div class="uk-text-small mi-nombre">
-                <p class="uk-text-lead t-g-claro">D.C.G. Diana B. Vázquez Camacho</p>
+            <div class="uk-text-small mi-nombre uk-text-center">
+                <p class="t-g-claro">D.C.G. Diana B. Vázquez Camacho</p>
             </div>
             <div>
-                <a href="tel://5561919111" class="t-g-claro" uk-icon="icon: phone; ratio: 2"></a>
-                <a href="mailto:anaid.xd@gmail.com" class="t-g-claro" uk-icon="icon: mail; ratio: 2"></a>
-                <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro" uk-icon="icon: linkedin; ratio: 2"></a>
-                <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium-right" uk-icon="icon: github; ratio: 2"></a>
+                <a class="uk-margin-small" title="55 6191 9111" uk-tooltip="pos:top">
+                    <a href="tel://5561919111" class="t-g-claro" uk-icon="icon: phone; ratio: 1.7"></a>
+                </a>
+                <a class="uk-margin-small" title="anaid.xd@gmail.com" uk-tooltip="pos:top">
+                    <a href="mailto:anaid.xd@gmail.com" class="t-g-claro" uk-icon="icon: mail; ratio: 1.7"></a>
+                </a>
+                <a target="_blank" href="https://linkedin.com/in/dianix-v" class="t-g-claro uk-margin-small" uk-icon="icon: linkedin; ratio:1.7"></a>
+                <a target="_blank" href="https://github.com/dianix" class="t-g-claro uk-margin-medium" uk-icon="icon: github; ratio: 1.7"></a>
             </div>
-
-
         </div>
     </footer>
 

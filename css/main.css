@@ -135,14 +135,17 @@ h2.uk-margin-remove.t-g-azul.julius {
 }
 
 #contacto .mi-nombre {
-    padding: 2rem 0;
+    padding-top: 1rem;
 }
 
-#contacto a {
-    margin: 0 .25rem;
-    padding: 0;
-}
 
 #contacto a:hover {
     color: #8dc63f;
 }
+
+@media (min-width:0px) and (max-width:639px) {
+    div.icono-xs {
+        width: 50%;
+    }
+}
+
