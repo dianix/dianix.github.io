@@ -46,7 +46,7 @@
         <div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
 
             <div id="yop" class="uk-text-center animated pulse">
-                <div class="uk-inline-clip uk-transition-toggle">
+                <div class="uk-inline-clip uk-transition-toggle" uk-scrollspy="cls: uk-animation-shake; repeat: true">
                     <a><img src="assets/imgs/yop.jpg" class="uk-border-circle" alt="Diana V."></a>
                     <div class="uk-transition-fade uk-position-cover uk-position-xlarge uk-overlay uk-overlay-default uk-flex uk-flex-center uk-flex-middle uk-border-circle">
                         <p> <span class="t-uva uk-text-lead">D</span>iseñadora gráfica & Front End developer<br> Experiencia en áreas de museografía, diseño editorial y edición de imágenes. Con conocimientos de JavaScript, HTML5, CSS3, jQuery, Bootstrap, etc.<br> Gusto por la caligrafía, lettering, encuadernación e ingeniería en papel.</p>
@@ -62,7 +62,7 @@
         </div>
         <div id="herramientas" class="uk-grid uk-child-width-1-1@s uk-grid-collapse">
             <h4 class="t-verde julius uk-text-center@s uk-text-left@m">Herramientas de desarrollo web</h4>
-            <div class="web uk-child-width-1-3@s uk-child-width-1-6@m uk-text-center" uk-grid>
+            <div class="web uk-child-width-1-3@s uk-child-width-1-6@m uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .icono-xs; delay: 500; repeat: true">
                 <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
                         <img src="assets/imgs/tools/html5.svg" alt="HTML5">
@@ -108,7 +108,7 @@
             </div>
 
             <h5 class="t-verde julius uk-heading-line">Frameworks CSS</h5>
-            <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
+            <div class="uk-child-width-1-3@s uk-child-width-1-6@m uk-text-center" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .icono-xs; delay: 500; repeat: true">
                 <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
                         <img src="assets/imgs/tools/bt.svg" alt="Bootstrap">
@@ -133,7 +133,7 @@
             </div>
 
             <h4 class="t-verde julius">Herramientas de diseño</h4>
-            <div class="uk-child-width-1-5@m uk-text-center" uk-grid>
+            <div class="uk-child-width-1-3@s uk-child-width-1-6@m uk-text-center" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .icono-xs; delay: 500; repeat: true">
                 <div class="icono-xs">
                     <div class="uk-tile uk-padding-small">
                         <img src="assets/imgs/tools/ai.svg" alt="Illustrator">
@@ -178,11 +178,10 @@
         <div class="uk-heading-line uk-text-center uk-container">
             <h2 class="t-g-claro asap-b">Proyectos</h2>
         </div>
-        <div class="uk-margin-medium-top">
-            <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid>
-                <div class="uk-text-center">
+        <div  class="uk-margin-medium-top">
+            <div class="uk-child-width-1-3@s uk-grid-collapse uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-scale-up; target: .proyec; delay: 500; repeat: true">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
-
                         <img src="assets/imgs/proyectos/lyft.png" alt="lyft">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
                             <h3 class=" uk-margin-small uk-margin-remove"><b>Lyft</b></h3>
@@ -194,7 +193,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/labcar.png" alt="labcar">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
@@ -207,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/experimenta.png" alt="experimenta">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
@@ -221,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/twitter.png" alt="twitter">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
@@ -234,7 +233,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/antojitos.mx.png" alt="antojitosmx">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
@@ -247,7 +246,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-text-center">
+                <div class="proyec uk-text-center">
                     <div class="uk-inline-clip uk-transition-toggle">
                         <img src="assets/imgs/proyectos/pokedex.png" alt="pokedex">
                         <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary  uk-margin-remove">
@@ -283,6 +282,7 @@
 
     <!-- jQuery is required -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
     <!-- UIkit JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.25/js/uikit-icons.min.js"></script>
