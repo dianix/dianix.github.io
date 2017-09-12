@@ -104,7 +104,7 @@ header a.menu:hover {
 }
 
 #home {
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../assets/imgs/inicio-fondo.jpg);
     background-size: cover;
     background-position: center;
@@ -121,9 +121,15 @@ h2.uk-margin-remove.t-g-azul.julius {
     -ms-animation-iteration-count: 3;
 }
 
-#yop:hover {
-    cursor: pointer;
+#yop img {
+    width: 50%;
 }
+
+#yop p {
+    background-color: rgba(255, 255, 255, 0.40);
+}
+
+
 
 #conocimientos,
 #proyectos,
@@ -166,5 +172,9 @@ h2.uk-margin-remove.t-g-azul.julius {
     }
     div.icono-xs {
         width: 50%;
+    }
+    
+    #yop img {
+        width: 90%;
     }
 }
