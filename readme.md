@@ -1,6 +1,6 @@
 # Diana B. Vazquez Camacho
 
-Portafolios de trabajos
+Portafolio profesional
 * Acerca de mí
 * Servicios
 * Habilidades
